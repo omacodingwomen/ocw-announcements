@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @announcement.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @announcement.text %>
+</p>
+
+<p>
+  <strong>Twitter handle:</strong>
+  <%= @announcement.twitter_handle %>
+</p>
+
+<%= link_to 'Edit', edit_announcement_path(@announcement) %> |
+<%= link_to 'Back', announcements_path %>
