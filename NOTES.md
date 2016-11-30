@@ -1,6 +1,8 @@
 
 ## 11/29/2016 notes
 
+https://github.com/omacodingwomen/ocw-announcements is the project.
+
 ### ./bin/setup and bundle install requires a qmake update
 
 To get `bundle install` to work, 
@@ -13,7 +15,8 @@ after that `bundle install` worked for me.
 ### Betty solved the postgresql problem.
 https://gist.github.com/amolkhanorkar/8706915
 
- ```sudo service postgresql start
+ ```
+ sudo service postgresql start
 sudo su - postgres
 psql
 UPDATE pg_database SET datistemplate = FALSE WHERE datname = 'template1';
