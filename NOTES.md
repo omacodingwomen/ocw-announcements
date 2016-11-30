@@ -7,6 +7,7 @@ https://github.com/omacodingwomen/ocw-announcements is the project.
 
 To get `bundle install` to work, 
 do these two things: 
+
 1. `sudo apt-get update` then 
 2. `sudo apt-get install libqt4-dev pkg-config` 
 
@@ -15,8 +16,8 @@ after that `bundle install` worked for me.
 ### Betty solved the postgresql problem.
 https://gist.github.com/amolkhanorkar/8706915
 
- ```
- sudo service postgresql start
+```
+sudo service postgresql start
 sudo su - postgres
 psql
 UPDATE pg_database SET datistemplate = FALSE WHERE datname = 'template1';
@@ -28,5 +29,6 @@ VACUUM FREEZE;
 \q
 exit
 ```
+
 1. See commit messages for rails cli commands.
 1. For changing the root route:  http://docs.railsbridge.org/intro-to-rails/setting_the_default_page
